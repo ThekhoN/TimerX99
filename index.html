@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="timerX_WrapperAll">
+    <div class="absWrapX">
+        <div class="timerX_Wrapper" id="CountDwnX99_01"> <span class="timerX_valueX dayV_timerX">
+         </span> <span class="timerX_labelX dayL_timerX">
+         days
+         </span> <span class="timerX_valueX hrV_timerX">
+         </span> <span class="timerX_labelX hrL_timerX">
+           hr.
+         </span> <span class="timerX_valueX minV_timerX">
+         </span> <span class="timerX_labelX minL_timerX">
+           min.
+         </span> <span class="timerX_valueX secV_timerX">
+         </span> <span class="timerX_labelX secL_timerX">
+           sec.
+         </span> </div>
+    </div>
+    <div class="absWrapX">
+        <div class="timerX_Wrapper" id="CountDwnX99_02"> <span class="timerX_valueX dayV_timerX">
+          </span> <span class="timerX_labelX dayL_timerX">
+          days
+          </span> <span class="timerX_valueX hrV_timerX">
+          </span> <span class="timerX_labelX hrL_timerX">
+            hr.
+          </span> <span class="timerX_valueX minV_timerX">
+          </span> <span class="timerX_labelX minL_timerX">
+            min.
+          </span> <span class="timerX_valueX secV_timerX">
+          </span> <span class="timerX_labelX secL_timerX">
+            sec.
+          </span> </div>
+    </div>
+    <div class="absWrapX">
+        <div class="timerX_Wrapper" id="CountDwnX99_03"> <span class="timerX_valueX dayV_timerX">
+          </span> <span class="timerX_labelX dayL_timerX">
+          days
+          </span> <span class="timerX_valueX hrV_timerX">
+          </span> <span class="timerX_labelX hrL_timerX">
+            hr.
+          </span> <span class="timerX_valueX minV_timerX">
+          </span> <span class="timerX_labelX minL_timerX">
+            min.
+          </span> <span class="timerX_valueX secV_timerX">
+          </span> <span class="timerX_labelX secL_timerX">
+            sec.
+          </span> </div>
+    </div>
+</div>
+<br><br>
+<div class="captionX99 otherIcon caption_1" id="updateThisHeader">
+    <div class="centerCaptionInnr">
+        <h2>
+        	<span class="decorX">Other Offers</span>
+        </h2> </div>
+</div>
+
+<script src="js/TimerX99_min.js"></script>    
+<script>
+//options
+var startEnd_TargetID_typeArr = [
+    ['August 05 2016 17:10:00 GMT +0530', 'August 05 2016 18:31:00 GMT +0530', 'CountDwnX99_01', hideHourlyDealsHeader, false],
+    ['August 05 2016 18:31:00 GMT +0530', 'August 05 2016 18:32:00 GMT +0530', 'CountDwnX99_02', showHourlyDealsHeader, true],
+    ['August 05 2016 18:32:00 GMT +0530', 'August 05 2017 18:52:00 GMT +0530', 'CountDwnX99_03', hideHourlyDealsHeader, false]
+];
+    
+//init
+TimerX99.initCountDwnX99(startEnd_TargetID_typeArr);
+    
+function hideHourlyDealsHeader() {
+    console.log('hideHourlyDeals_nTimer running!');
+    var updateThisHeader = document.getElementById('updateThisHeader');
+    var span_updateThisHeader = updateThisHeader.getElementsByTagName('span')[0];
+    updateThisHeader.classList.remove('hourlyIcon');
+    updateThisHeader.classList.add('otherIcon');
+    span_updateThisHeader.firstChild.nodeValue = 'Other Offers';
+}
+
+function showHourlyDealsHeader() {
+    console.log('showHourlyDeals_nTimer running!');
+    var updateThisHeader = document.getElementById('updateThisHeader');
+    var span_updateThisHeader = updateThisHeader.getElementsByTagName('span')[0];
+    updateThisHeader.classList.remove('otherIcon');
+    updateThisHeader.classList.add('hourlyIcon');
+    span_updateThisHeader.firstChild.nodeValue = 'Hourly Offers';
+}
+</script>         
+</body>
+
+</html>

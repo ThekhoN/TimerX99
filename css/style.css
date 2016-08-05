@@ -1,0 +1,16 @@
+*{margin:0;padding:0}
+body{font-family:'Roboto',sans-serif;padding:1em}
+.timerX_Wrapper_reference{font-size:16px;max-width:300px;height:32px;line-height:2;text-align:center;margin:0 auto;letter-spacing:1px;background:#f2f2f2}
+.timerX_Wrapper{font-size:16px;max-width:300px;height:32px;line-height:2;text-align:center;margin:0 auto;letter-spacing:1px;background:#f2f2f2;display:none}
+.timerX_WrapperAll{position:relative;float:left;width:100%;overflow:hidden;height:32px}
+.absWrapX{position:absolute;width:100%;left:0;bottom:0}
+
+/* start test css */
+.header{background:#f2f2f2}
+.active{background:orange;color:#fff}
+.captionX99 h2 span.decorX:after{height:.9em;width:.9em;background-size:cover;position:absolute;content:'';left:-1em;top:.2em}
+.caption_1 h2{text-transform:none;font-size:1.3em;font-weight:400;position:relative;display:inline-block;text-align:left;letter-spacing:1px;font-size:1.5em;line-height:1.2;z-index:2;color:#666;padding-left:3.6%}
+h2 span.decorX{display:inline!important;position:relative}
+.hourlyIcon h2 span.decorX:after{background:url(https://i1.sdlcdn.com/static/img/marketing-mailers/mailer/2016/Ankita/Icons_hourly.png);background-size:cover}
+.otherIcon h2 span.decorX:after{background:url(https://i1.sdlcdn.com/static/img/marketing-mailers/mailer/2016/Ankita/Icons_food.png);background-size:cover}
+/* end test css */
